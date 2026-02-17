@@ -10,13 +10,13 @@ pipeline {
 
         stage('Build') {
             steps {
-                sh 'mvn clean compile'
+                bat 'mvn clean compile'
             }
         }
 
         stage('Run') {
             steps {
-                sh 'mvn exec:java'
+                bat 'mvn exec:java'
             }
         }
     }
